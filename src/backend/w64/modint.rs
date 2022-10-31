@@ -5,7 +5,7 @@ use super::{addcarry_u64, subborrow_u64, umull, umull_add, umull_add2, umull_x2,
 use super::lagrange::lagrange253_vartime;
 
 #[derive(Clone, Copy, Debug)]
-pub struct ModInt256<const M0: u64, const M1: u64, const M2: u64, const M3: u64>([u64; 4]);
+pub struct ModInt256<const M0: u64, const M1: u64, const M2: u64, const M3: u64>(pub [u64; 4]);
 
 impl<const M0: u64, const M1: u64, const M2: u64, const M3: u64> ModInt256<M0, M1, M2, M3> {
 
